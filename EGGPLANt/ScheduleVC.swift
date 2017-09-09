@@ -69,6 +69,8 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UICollectionViewDataS
         super.viewDidLoad()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.tabBarController?.tabBar.isHidden = false
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
         // Do any additional setup after loading the view.
     }
 

@@ -6,11 +6,16 @@
 //  Copyright © 2017 FifthGroup. All rights reserved.
 //
 
-//#import <M13Checkbox/M13Checkbox.h>
 
 import UIKit
 
+protocol ChecklistDelegate {
+    func btnChecked(cell: ChecklistTVCell)
+}
+
 class ChecklistTVCell: UITableViewCell {
+    var delegate:ChecklistDelegate?
+    
     @IBOutlet weak var titleLb: UILabel!
     
     @IBOutlet weak var locationLb: UILabel!
@@ -25,11 +30,26 @@ class ChecklistTVCell: UITableViewCell {
     
     @IBOutlet weak var boxImage: UIImageView!
     
+    @IBAction func checkbox(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if let _ = delegate {
+            delegate?.btnChecked(cell:self)
+        }
+        
+    }
 }
 
-class ChecklistTVC: UITableViewController {
+class ChecklistTVC: UITableViewController, ChecklistDelegate {
     
     var checklistItems:[ChecklistItem] = []
+    
+    func btnChecked(cell: ChecklistTVCell) {
+        let indexPath = self.tableView.indexPath(for: cell)
+        print(indexPath!.row)
+        
+        checklistItems.remove(at: indexPath!.row)
+        tv.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +58,7 @@ class ChecklistTVC: UITableViewController {
                 ,type:0
                 ,location:"師大"
                 ,annotation:"攜帶零錢"
-                ,done:true
+                ,done:false
                 ,date:"0823"
                 ,time:"18:00"
                 ,bell:true),
@@ -60,12 +80,6 @@ class ChecklistTVC: UITableViewController {
                 ,bell:true
             )
         ]
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,9 +97,11 @@ class ChecklistTVC: UITableViewController {
     @IBOutlet weak var locationLb: UILabel!
     @IBOutlet weak var annotationLb: UILabel!
     
+    @IBOutlet var tv: UITableView!
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:ChecklistTVCell? = tableView.dequeueReusableCell(withIdentifier: "Cell") as?ChecklistTVCell
+        cell?.delegate = self
         /*cell = UITableViewCell(style:UITableViewCellStyle.default, reuseIdentifier: "Cell")*/
         
         cell?.titleLb?.text = checklistItems[indexPath.row].title

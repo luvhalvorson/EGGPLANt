@@ -10,4 +10,7 @@ import UIKit
 
 class WeekDayCVC: UICollectionViewCell {
     
+    @IBOutlet weak var dayLb: UILabel!
+    @IBOutlet weak var weekLb: UILabel!
+    
 }

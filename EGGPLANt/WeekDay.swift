@@ -1,5 +1,5 @@
 //
-//  WeekDayStruct.swift
+//  WeekDay.swift
 //  EGGPLANt
 //
 //  Created by 何玟叡 on 2017/9/8.

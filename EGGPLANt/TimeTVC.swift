@@ -10,6 +10,7 @@ import UIKit
 
 class TimeTVC: UITableViewCell {
 
+    @IBOutlet weak var cellLb: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

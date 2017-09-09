@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC31F5FFA38009957B9 /* AppDelegate.swift */; };
-		0865DBC61F5FFA38009957B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* ViewController.swift */; };
+		0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* StartVC.swift */; };
 		0865DBC91F5FFA38009957B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865DBC71F5FFA38009957B9 /* Main.storyboard */; };
-		0865DBCB1F5FFA38009957B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0865DBCA1F5FFA38009957B9 /* Assets.xcassets */; };
 		0865DBCE1F5FFA38009957B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865DBCC1F5FFA38009957B9 /* LaunchScreen.storyboard */; };
 		0865DBD91F5FFA38009957B9 /* EGGPLANtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBD81F5FFA38009957B9 /* EGGPLANtTests.swift */; };
 		0865DBE41F5FFA38009957B9 /* EGGPLANtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBE31F5FFA38009957B9 /* EGGPLANtUITests.swift */; };
 		0865DBF61F601EAD009957B9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBF51F601EAD009957B9 /* LoginVC.swift */; };
 		0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBF71F6021E6009957B9 /* LoadingVC.swift */; };
 		08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E952591F6022BC00BA4F97 /* FirstEggVC.swift */; };
+		B07905D81F625142003A97AD /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905D71F625142003A97AD /* ScheduleVC.swift */; };
+		B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905D91F625B93003A97AD /* TimeTVC.swift */; };
+		B07905DC1F6272DB003A97AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07905DB1F6272DA003A97AD /* Assets.xcassets */; };
+		B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DD1F62763A003A97AD /* WeekDayCVC.swift */; };
+		B07905E01F62805F003A97AD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DF1F62805F003A97AD /* WeekDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +43,8 @@
 /* Begin PBXFileReference section */
 		0865DBC01F5FFA38009957B9 /* EGGPLANt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGGPLANt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865DBC31F5FFA38009957B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0865DBC51F5FFA38009957B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0865DBC51F5FFA38009957B9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		0865DBC81F5FFA38009957B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0865DBCA1F5FFA38009957B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0865DBCD1F5FFA38009957B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0865DBCF1F5FFA38009957B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0865DBD41F5FFA38009957B9 /* EGGPLANtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGGPLANtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +56,11 @@
 		0865DBF51F601EAD009957B9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0865DBF71F6021E6009957B9 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		08E952591F6022BC00BA4F97 /* FirstEggVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEggVC.swift; sourceTree = "<group>"; };
+		B07905D71F625142003A97AD /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		B07905D91F625B93003A97AD /* TimeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTVC.swift; sourceTree = "<group>"; };
+		B07905DB1F6272DA003A97AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B07905DD1F62763A003A97AD /* WeekDayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCVC.swift; sourceTree = "<group>"; };
+		B07905DF1F62805F003A97AD /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +111,22 @@
 		0865DBC21F5FFA38009957B9 /* EGGPLANt */ = {
 			isa = PBXGroup;
 			children = (
-				0865DBCA1F5FFA38009957B9 /* Assets.xcassets */,
+				B07905E31F6293A7003A97AD /* Controller */,
+				B07905E21F62939C003A97AD /* Module */,
+				B07905E11F629391003A97AD /* View */,
+				B07905DB1F6272DA003A97AD /* Assets.xcassets */,
 				0865DBCF1F5FFA38009957B9 /* Info.plist */,
 				0865DBC31F5FFA38009957B9 /* AppDelegate.swift */,
 				0865DBCC1F5FFA38009957B9 /* LaunchScreen.storyboard */,
 				0865DBC71F5FFA38009957B9 /* Main.storyboard */,
-				0865DBC51F5FFA38009957B9 /* ViewController.swift */,
+				0865DBC51F5FFA38009957B9 /* StartVC.swift */,
 				0865DBF51F601EAD009957B9 /* LoginVC.swift */,
 				0865DBF71F6021E6009957B9 /* LoadingVC.swift */,
 				08E952591F6022BC00BA4F97 /* FirstEggVC.swift */,
+				B07905D71F625142003A97AD /* ScheduleVC.swift */,
+				B07905D91F625B93003A97AD /* TimeTVC.swift */,
+				B07905DD1F62763A003A97AD /* WeekDayCVC.swift */,
+				B07905DF1F62805F003A97AD /* WeekDay.swift */,
 			);
 			path = EGGPLANt;
 			sourceTree = "<group>";
@@ -132,6 +147,27 @@
 				0865DBE51F5FFA38009957B9 /* Info.plist */,
 			);
 			path = EGGPLANtUITests;
+			sourceTree = "<group>";
+		};
+		B07905E11F629391003A97AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B07905E21F62939C003A97AD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B07905E31F6293A7003A97AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0865DBCE1F5FFA38009957B9 /* LaunchScreen.storyboard in Resources */,
-				0865DBCB1F5FFA38009957B9 /* Assets.xcassets in Resources */,
+				B07905DC1F6272DB003A97AD /* Assets.xcassets in Resources */,
 				0865DBC91F5FFA38009957B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,11 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07905E01F62805F003A97AD /* WeekDay.swift in Sources */,
 				08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */,
-				0865DBC61F5FFA38009957B9 /* ViewController.swift in Sources */,
+				B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */,
+				0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */,
 				0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */,
 				0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */,
+				B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */,
 				0865DBF61F601EAD009957B9 /* LoginVC.swift in Sources */,
+				B07905D81F625142003A97AD /* ScheduleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

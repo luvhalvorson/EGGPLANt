@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartVC.swift
 //  EGGPLANt
 //
 //  Created by YiChin Lee on 06/09/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartVC: UIViewController {
     
     @IBAction func LoginBtn(_ sender: Any) {
         

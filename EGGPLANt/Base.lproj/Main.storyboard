@@ -265,6 +265,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Schedule_math"/>
                                 <connections>
+                                    <action selector="mathBtn:" destination="OQJ-pC-ifW" eventType="touchUpInside" id="dh0-Ia-3bh"/>
                                     <segue destination="sRd-lP-tZs" kind="show" id="KLA-qo-5ax"/>
                                 </connections>
                             </button>
@@ -273,6 +274,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Schedule_pe"/>
                                 <connections>
+                                    <action selector="peBtn:" destination="OQJ-pC-ifW" eventType="touchUpInside" id="wUC-rk-fVi"/>
                                     <segue destination="sRd-lP-tZs" kind="show" id="dni-9P-LMB"/>
                                 </connections>
                             </button>
@@ -281,7 +283,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Schedule_ui"/>
                                 <connections>
-                                    <segue destination="sRd-lP-tZs" kind="show" id="Sbq-w9-njG"/>
+                                    <action selector="uiBtn:" destination="OQJ-pC-ifW" eventType="touchUpInside" id="Pi2-7P-NCP"/>
+                                    <segue destination="sRd-lP-tZs" kind="show" id="Xdh-2e-Dkq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKi-T9-wvq">
@@ -289,6 +292,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Schedule_music"/>
                                 <connections>
+                                    <action selector="musicBtn:" destination="OQJ-pC-ifW" eventType="touchUpInside" id="I8E-Dw-TqP"/>
                                     <segue destination="sRd-lP-tZs" kind="show" id="5WT-Jm-GLa"/>
                                 </connections>
                             </button>
@@ -297,6 +301,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Schedule_app"/>
                                 <connections>
+                                    <action selector="appBtn:" destination="OQJ-pC-ifW" eventType="touchUpInside" id="dsM-q3-7wx"/>
                                     <segue destination="sRd-lP-tZs" kind="show" id="Jzf-bg-82B"/>
                                 </connections>
                             </button>
@@ -318,20 +323,123 @@
             </objects>
             <point key="canvasLocation" x="4210" y="-1397"/>
         </scene>
-        <!--View Controller-->
+        <!--Lesson DetailVC-->
         <scene sceneID="wvL-nc-b5m">
             <objects>
-                <viewController id="sRd-lP-tZs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LessonDetailVC" id="sRd-lP-tZs" customClass="LessonDetailVC" customModule="EGGPLANt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NhZ-3c-mpN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_BG" translatesAutoresizingMaskIntoConstraints="NO" id="iXr-hF-H6d">
+                                <rect key="frame" x="0.0" y="65" width="375" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_up" translatesAutoresizingMaskIntoConstraints="NO" id="C47-Ey-fOQ">
+                                <rect key="frame" x="20" y="230" width="334" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_down" translatesAutoresizingMaskIntoConstraints="NO" id="ISq-dS-nVq">
+                                <rect key="frame" x="20" y="437" width="334" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="老師公告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKY-sJ-Azu">
+                                <rect key="frame" x="147" y="200" width="81" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="學生專區" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr1-Ws-GLg">
+                                <rect key="frame" x="147" y="407" width="81" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJu-Nk-p8b">
+                                <rect key="frame" x="121" y="438" width="181" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <connections>
+                                    <segue destination="ZYX-cp-YLu" kind="show" id="VLv-Lz-AOE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數學題本A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeo-HT-Nrw">
+                                <rect key="frame" x="143" y="462" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_location" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-wI-YaE">
+                                <rect key="frame" x="42" y="89" width="26" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_people" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-cY-WwW">
+                                <rect key="frame" x="237" y="89" width="26" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B508                         公誠樓508" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0s-bK-rH8">
+                                <rect key="frame" x="81" y="83" width="92" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="艾吵架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbP-OQ-r37">
+                                <rect key="frame" x="274" y="92" width="57" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKe-E9-G9d">
+                                <rect key="frame" x="312" y="458" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="8Be-Yj-RaD"/>
                     </view>
+                    <connections>
+                        <outlet property="noticeImg" destination="TKe-E9-G9d" id="yOY-P2-6No"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ko9-LO-stY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4858" y="-1397"/>
+            <point key="canvasLocation" x="4856.8000000000002" y="-1397.4512743628186"/>
+        </scene>
+        <!--NoticeVC-->
+        <scene sceneID="A1t-7b-TsB">
+            <objects>
+                <viewController storyboardIdentifier="NoticeVC" id="ZYX-cp-YLu" customClass="NoticeVC" customModule="EGGPLANt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hdu-Eu-GiO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LessonInfo_fakeSet" translatesAutoresizingMaskIntoConstraints="NO" id="UbM-hG-S2I">
+                                <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vM-en-EJS">
+                                <rect key="frame" x="278" y="606" width="51" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="okBtn"/>
+                                <connections>
+                                    <action selector="noticeSetFinished:" destination="ZYX-cp-YLu" eventType="touchUpInside" id="BjB-jV-37c"/>
+                                    <segue destination="ctz-sw-m9e" kind="unwind" unwindAction="homeWithSegue:" id="2cW-lC-JKQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Hiu-C5-WO5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD3-lW-4rv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ctz-sw-m9e" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5492" y="-1397"/>
         </scene>
         <!--Check List-->
         <scene sceneID="Rcr-hC-hyM">
@@ -529,6 +637,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LessonInfo_BG" width="375" height="127"/>
+        <image name="LessonInfo_down" width="334" height="211"/>
+        <image name="LessonInfo_fakeSet" width="375" height="604"/>
+        <image name="LessonInfo_location" width="26" height="35"/>
+        <image name="LessonInfo_people" width="26" height="35"/>
+        <image name="LessonInfo_up" width="334" height="161"/>
         <image name="Schedule_BG" width="375" height="667"/>
         <image name="Schedule_app" width="60" height="112"/>
         <image name="Schedule_math" width="60" height="112"/>
@@ -536,9 +650,10 @@
         <image name="Schedule_pe" width="60" height="99"/>
         <image name="Schedule_slice" width="62" height="31"/>
         <image name="Schedule_ui" width="60" height="112"/>
+        <image name="okBtn" width="51" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jzf-bg-82B"/>
+        <segue reference="dni-9P-LMB"/>
         <segue reference="6fd-vu-M3h"/>
     </inferredMetricsTieBreakers>
 </document>

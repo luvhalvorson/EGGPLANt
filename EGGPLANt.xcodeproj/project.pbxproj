@@ -21,6 +21,8 @@
 		B07905DC1F6272DB003A97AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07905DB1F6272DA003A97AD /* Assets.xcassets */; };
 		B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DD1F62763A003A97AD /* WeekDayCVC.swift */; };
 		B07905E01F62805F003A97AD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DF1F62805F003A97AD /* WeekDay.swift */; };
+		B0BA252A1F6398840064593B /* LessonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA25291F6398840064593B /* LessonDetailVC.swift */; };
+		B0BA252C1F63CD740064593B /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA252B1F63CD740064593B /* NoticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		B07905DB1F6272DA003A97AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B07905DD1F62763A003A97AD /* WeekDayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCVC.swift; sourceTree = "<group>"; };
 		B07905DF1F62805F003A97AD /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		B0BA25291F6398840064593B /* LessonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailVC.swift; sourceTree = "<group>"; };
+		B0BA252B1F63CD740064593B /* NoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				B07905D91F625B93003A97AD /* TimeTVC.swift */,
 				B07905DD1F62763A003A97AD /* WeekDayCVC.swift */,
 				B07905DF1F62805F003A97AD /* WeekDay.swift */,
+				B0BA25291F6398840064593B /* LessonDetailVC.swift */,
+				B0BA252B1F63CD740064593B /* NoticeVC.swift */,
 			);
 			path = EGGPLANt;
 			sourceTree = "<group>";
@@ -305,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07905E01F62805F003A97AD /* WeekDay.swift in Sources */,
+				B0BA252C1F63CD740064593B /* NoticeVC.swift in Sources */,
+				B0BA252A1F6398840064593B /* LessonDetailVC.swift in Sources */,
 				08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */,
 				B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */,
 				0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */,

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02CE80471FA5503D204F75D3 /* Pods_EGGPLANtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3BD0570C70BDBA81618C30 /* Pods_EGGPLANtTests.framework */; };
+		02CE80471FA5503D204F75D3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC31F5FFA38009957B9 /* AppDelegate.swift */; };
 		0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* StartVC.swift */; };
 		0865DBC91F5FFA38009957B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865DBC71F5FFA38009957B9 /* Main.storyboard */; };
@@ -20,12 +20,18 @@
 		089661941F63A61A000AD483 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089661931F63A61A000AD483 /* ChecklistItem.swift */; };
 		089661D81F63D51C000AD483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089661D71F63D51C000AD483 /* Assets.xcassets */; };
 		08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E952591F6022BC00BA4F97 /* FirstEggVC.swift */; };
+		08F8009F1F645EF000B1E91E /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F8009D1F645EF000B1E91E /* NoticeVC.swift */; };
+		08F800A01F645EF000B1E91E /* LessonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F8009E1F645EF000B1E91E /* LessonDetailVC.swift */; };
+		09E9B31B593B56055AF88527 /* Pods_EGGPLANt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2C31E7D9AAD21238294A25 /* Pods_EGGPLANt.framework */; };
+		4C9614C82CC759942BF27767 /* Pods_EGGPLANtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8A1E67F6499759ABA4E876 /* Pods_EGGPLANtTests.framework */; };
 		B07905D81F625142003A97AD /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905D71F625142003A97AD /* ScheduleVC.swift */; };
 		B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905D91F625B93003A97AD /* TimeTVC.swift */; };
 		B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DD1F62763A003A97AD /* WeekDayCVC.swift */; };
 		B07905E01F62805F003A97AD /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07905DF1F62805F003A97AD /* WeekDay.swift */; };
+		B0BA252A1F6398840064593B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		B0BA252C1F63CD740064593B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		F44D3F8AA9303419E20EB979 /* Pods_EGGPLANtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B576B524919525EBA3F3F4 /* Pods_EGGPLANtUITests.framework */; };
-		F64F691AB54710A557091BD3 /* Pods_EGGPLANt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07D409E4F8FC1DCBE87968C /* Pods_EGGPLANt.framework */; };
+		F64F691AB54710A557091BD3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,24 +70,21 @@
 		089661931F63A61A000AD483 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		089661D71F63D51C000AD483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E952591F6022BC00BA4F97 /* FirstEggVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEggVC.swift; sourceTree = "<group>"; };
+		08F8009D1F645EF000B1E91E /* NoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
+		08F8009E1F645EF000B1E91E /* LessonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDetailVC.swift; sourceTree = "<group>"; };
 		16B576B524919525EBA3F3F4 /* Pods_EGGPLANtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8A1E67F6499759ABA4E876 /* Pods_EGGPLANtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649E8C5CAE3318270DDD328B /* Pods-EGGPLANt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANt/Pods-EGGPLANt.debug.xcconfig"; sourceTree = "<group>"; };
 		678A74636934D14FC7EC3E74 /* Pods-EGGPLANtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANtTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANtTests/Pods-EGGPLANtTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A2C31E7D9AAD21238294A25 /* Pods_EGGPLANt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB587FCF8FCA24EEB3237D5 /* Pods-EGGPLANtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANtUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANtUITests/Pods-EGGPLANtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		816E1507283AE7E7CD77A16F /* Pods-EGGPLANtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANtUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANtUITests/Pods-EGGPLANtUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8825E2BE1BC8598B2B5E9C29 /* Pods-EGGPLANtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANtTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANtTests/Pods-EGGPLANtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9764592B12319F6D1A2DC20 /* Pods-EGGPLANt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANt.release.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANt/Pods-EGGPLANt.release.xcconfig"; sourceTree = "<group>"; };
 		B07905D71F625142003A97AD /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		B07905D91F625B93003A97AD /* TimeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTVC.swift; sourceTree = "<group>"; };
 		B07905DD1F62763A003A97AD /* WeekDayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCVC.swift; sourceTree = "<group>"; };
 		B07905DF1F62805F003A97AD /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		B0BA25291F6398840064593B /* LessonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailVC.swift; sourceTree = "<group>"; };
-		B0BA252B1F63CD740064593B /* NoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
-=======
-		C6897A14FF90CB15C10524D1 /* Pods-EGGPLANt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANt.release.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANt/Pods-EGGPLANt.release.xcconfig"; sourceTree = "<group>"; };
-		DD3BD0570C70BDBA81618C30 /* Pods_EGGPLANtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F07D409E4F8FC1DCBE87968C /* Pods_EGGPLANt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F537562CF8D1B420237D4066 /* Pods-EGGPLANt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGGPLANt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EGGPLANt/Pods-EGGPLANt.debug.xcconfig"; sourceTree = "<group>"; };
->>>>>>> 2342ceaebe048275c2826212537b11272b18dbbc
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64F691AB54710A557091BD3 /* Pods_EGGPLANt.framework in Frameworks */,
+				F64F691AB54710A557091BD3 /* (null) in Frameworks */,
+				09E9B31B593B56055AF88527 /* Pods_EGGPLANt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CE80471FA5503D204F75D3 /* Pods_EGGPLANtTests.framework in Frameworks */,
+				02CE80471FA5503D204F75D3 /* (null) in Frameworks */,
+				4C9614C82CC759942BF27767 /* Pods_EGGPLANtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +142,8 @@
 		0865DBC21F5FFA38009957B9 /* EGGPLANt */ = {
 			isa = PBXGroup;
 			children = (
+				08F8009E1F645EF000B1E91E /* LessonDetailVC.swift */,
+				08F8009D1F645EF000B1E91E /* NoticeVC.swift */,
 				089661D71F63D51C000AD483 /* Assets.xcassets */,
 				0865DBCF1F5FFA38009957B9 /* Info.plist */,
 				0865DBC31F5FFA38009957B9 /* AppDelegate.swift */,
@@ -152,8 +159,6 @@
 				B07905D91F625B93003A97AD /* TimeTVC.swift */,
 				B07905DD1F62763A003A97AD /* WeekDayCVC.swift */,
 				B07905DF1F62805F003A97AD /* WeekDay.swift */,
-				B0BA25291F6398840064593B /* LessonDetailVC.swift */,
-				B0BA252B1F63CD740064593B /* NoticeVC.swift */,
 			);
 			path = EGGPLANt;
 			sourceTree = "<group>";
@@ -179,12 +184,12 @@
 		15A982F36C76E76576B6E465 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F537562CF8D1B420237D4066 /* Pods-EGGPLANt.debug.xcconfig */,
-				C6897A14FF90CB15C10524D1 /* Pods-EGGPLANt.release.xcconfig */,
 				8825E2BE1BC8598B2B5E9C29 /* Pods-EGGPLANtTests.debug.xcconfig */,
 				678A74636934D14FC7EC3E74 /* Pods-EGGPLANtTests.release.xcconfig */,
 				7FB587FCF8FCA24EEB3237D5 /* Pods-EGGPLANtUITests.debug.xcconfig */,
 				816E1507283AE7E7CD77A16F /* Pods-EGGPLANtUITests.release.xcconfig */,
+				649E8C5CAE3318270DDD328B /* Pods-EGGPLANt.debug.xcconfig */,
+				A9764592B12319F6D1A2DC20 /* Pods-EGGPLANt.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -192,9 +197,9 @@
 		8A88F14F0B96541045A5F9A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F07D409E4F8FC1DCBE87968C /* Pods_EGGPLANt.framework */,
-				DD3BD0570C70BDBA81618C30 /* Pods_EGGPLANtTests.framework */,
 				16B576B524919525EBA3F3F4 /* Pods_EGGPLANtUITests.framework */,
+				6A2C31E7D9AAD21238294A25 /* Pods_EGGPLANt.framework */,
+				3F8A1E67F6499759ABA4E876 /* Pods_EGGPLANtTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -493,11 +498,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07905E01F62805F003A97AD /* WeekDay.swift in Sources */,
-				B0BA252C1F63CD740064593B /* NoticeVC.swift in Sources */,
-				B0BA252A1F6398840064593B /* LessonDetailVC.swift in Sources */,
+				B0BA252C1F63CD740064593B /* (null) in Sources */,
+				B0BA252A1F6398840064593B /* (null) in Sources */,
 				08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */,
 				089661901F639F6C000AD483 /* ChecklistTVC.swift in Sources */,
 				B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */,
+				08F800A01F645EF000B1E91E /* LessonDetailVC.swift in Sources */,
+				08F8009F1F645EF000B1E91E /* NoticeVC.swift in Sources */,
 				0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */,
 				089661941F63A61A000AD483 /* ChecklistItem.swift in Sources */,
 				0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */,
@@ -668,7 +675,7 @@
 		};
 		0865DBE91F5FFA38009957B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F537562CF8D1B420237D4066 /* Pods-EGGPLANt.debug.xcconfig */;
+			baseConfigurationReference = 649E8C5CAE3318270DDD328B /* Pods-EGGPLANt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,7 +690,7 @@
 		};
 		0865DBEA1F5FFA38009957B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6897A14FF90CB15C10524D1 /* Pods-EGGPLANt.release.xcconfig */;
+			baseConfigurationReference = A9764592B12319F6D1A2DC20 /* Pods-EGGPLANt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

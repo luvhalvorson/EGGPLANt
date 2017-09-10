@@ -11,11 +11,10 @@ import UIKit
 class CreateEventVC: UIViewController {
     @IBOutlet weak var eventTf: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventTf.layer.cornerRadius = 12.0
-        eventTf.layer.borderWidth = 2.0
-        eventTf.layer.borderColor = UIColor.white.cgColor
+        
         // Do any additional setup after loading the view.
     }
 

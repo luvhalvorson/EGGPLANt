@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02CE80471FA5503D204F75D3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		0812647A1F651FE10002AD56 /* ChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081264791F651FE10002AD56 /* ChecklistVC.swift */; };
 		086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086113A01F649C5200D7568E /* CreateEventVC.swift */; };
 		0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC31F5FFA38009957B9 /* AppDelegate.swift */; };
 		0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* StartVC.swift */; };
@@ -17,9 +18,9 @@
 		0865DBE41F5FFA38009957B9 /* EGGPLANtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBE31F5FFA38009957B9 /* EGGPLANtUITests.swift */; };
 		0865DBF61F601EAD009957B9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBF51F601EAD009957B9 /* LoginVC.swift */; };
 		0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBF71F6021E6009957B9 /* LoadingVC.swift */; };
-		089661901F639F6C000AD483 /* ChecklistTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896618F1F639F6C000AD483 /* ChecklistTVC.swift */; };
 		089661941F63A61A000AD483 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089661931F63A61A000AD483 /* ChecklistItem.swift */; };
 		089661D81F63D51C000AD483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089661D71F63D51C000AD483 /* Assets.xcassets */; };
+		08D5A70B1F6534BF00ABC4CE /* RoundCornerTf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D5A70A1F6534BF00ABC4CE /* RoundCornerTf.swift */; };
 		08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E952591F6022BC00BA4F97 /* FirstEggVC.swift */; };
 		08F8009F1F645EF000B1E91E /* NoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F8009D1F645EF000B1E91E /* NoticeVC.swift */; };
 		08F800A01F645EF000B1E91E /* LessonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F8009E1F645EF000B1E91E /* LessonDetailVC.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081264791F651FE10002AD56 /* ChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistVC.swift; sourceTree = "<group>"; };
 		086113A01F649C5200D7568E /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
 		0865DBC01F5FFA38009957B9 /* EGGPLANt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGGPLANt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865DBC31F5FFA38009957B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +70,9 @@
 		0865DBE51F5FFA38009957B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0865DBF51F601EAD009957B9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0865DBF71F6021E6009957B9 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
-		0896618F1F639F6C000AD483 /* ChecklistTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTVC.swift; sourceTree = "<group>"; };
 		089661931F63A61A000AD483 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		089661D71F63D51C000AD483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08D5A70A1F6534BF00ABC4CE /* RoundCornerTf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerTf.swift; sourceTree = "<group>"; };
 		08E952591F6022BC00BA4F97 /* FirstEggVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEggVC.swift; sourceTree = "<group>"; };
 		08F8009D1F645EF000B1E91E /* NoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeVC.swift; sourceTree = "<group>"; };
 		08F8009E1F645EF000B1E91E /* LessonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDetailVC.swift; sourceTree = "<group>"; };
@@ -151,8 +153,9 @@
 				0865DBC31F5FFA38009957B9 /* AppDelegate.swift */,
 				0865DBCC1F5FFA38009957B9 /* LaunchScreen.storyboard */,
 				0865DBC71F5FFA38009957B9 /* Main.storyboard */,
+				08D5A70A1F6534BF00ABC4CE /* RoundCornerTf.swift */,
+				081264791F651FE10002AD56 /* ChecklistVC.swift */,
 				086113A01F649C5200D7568E /* CreateEventVC.swift */,
-				0896618F1F639F6C000AD483 /* ChecklistTVC.swift */,
 				089661931F63A61A000AD483 /* ChecklistItem.swift */,
 				0865DBC51F5FFA38009957B9 /* StartVC.swift */,
 				0865DBF51F601EAD009957B9 /* LoginVC.swift */,
@@ -504,8 +507,8 @@
 				B0BA252C1F63CD740064593B /* (null) in Sources */,
 				B0BA252A1F6398840064593B /* (null) in Sources */,
 				08E9525A1F6022BC00BA4F97 /* FirstEggVC.swift in Sources */,
-				089661901F639F6C000AD483 /* ChecklistTVC.swift in Sources */,
 				B07905DE1F62763A003A97AD /* WeekDayCVC.swift in Sources */,
+				0812647A1F651FE10002AD56 /* ChecklistVC.swift in Sources */,
 				08F800A01F645EF000B1E91E /* LessonDetailVC.swift in Sources */,
 				08F8009F1F645EF000B1E91E /* NoticeVC.swift in Sources */,
 				0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */,
@@ -514,6 +517,7 @@
 				0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */,
 				B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */,
 				086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */,
+				08D5A70B1F6534BF00ABC4CE /* RoundCornerTf.swift in Sources */,
 				0865DBF61F601EAD009957B9 /* LoginVC.swift in Sources */,
 				B07905D81F625142003A97AD /* ScheduleVC.swift in Sources */,
 			);

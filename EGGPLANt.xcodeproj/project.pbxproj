@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02CE80471FA5503D204F75D3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086113A01F649C5200D7568E /* CreateEventVC.swift */; };
 		0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC31F5FFA38009957B9 /* AppDelegate.swift */; };
 		0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* StartVC.swift */; };
 		0865DBC91F5FFA38009957B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0865DBC71F5FFA38009957B9 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086113A01F649C5200D7568E /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
 		0865DBC01F5FFA38009957B9 /* EGGPLANt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGGPLANt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865DBC31F5FFA38009957B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0865DBC51F5FFA38009957B9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				0865DBC31F5FFA38009957B9 /* AppDelegate.swift */,
 				0865DBCC1F5FFA38009957B9 /* LaunchScreen.storyboard */,
 				0865DBC71F5FFA38009957B9 /* Main.storyboard */,
+				086113A01F649C5200D7568E /* CreateEventVC.swift */,
 				0896618F1F639F6C000AD483 /* ChecklistTVC.swift */,
 				089661931F63A61A000AD483 /* ChecklistItem.swift */,
 				0865DBC51F5FFA38009957B9 /* StartVC.swift */,
@@ -510,6 +513,7 @@
 				0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */,
 				0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */,
 				B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */,
+				086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */,
 				0865DBF61F601EAD009957B9 /* LoginVC.swift in Sources */,
 				B07905D81F625142003A97AD /* ScheduleVC.swift in Sources */,
 			);

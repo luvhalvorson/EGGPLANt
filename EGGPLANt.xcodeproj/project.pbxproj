@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02CE80471FA5503D204F75D3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		0812647A1F651FE10002AD56 /* ChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081264791F651FE10002AD56 /* ChecklistVC.swift */; };
+		086059FD1F65C9120003B4EE /* MyPetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086059FC1F65C9120003B4EE /* MyPetVC.swift */; };
 		086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086113A01F649C5200D7568E /* CreateEventVC.swift */; };
 		0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC31F5FFA38009957B9 /* AppDelegate.swift */; };
 		0865DBC61F5FFA38009957B9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0865DBC51F5FFA38009957B9 /* StartVC.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		081264791F651FE10002AD56 /* ChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistVC.swift; sourceTree = "<group>"; };
+		086059FC1F65C9120003B4EE /* MyPetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetVC.swift; sourceTree = "<group>"; };
 		086113A01F649C5200D7568E /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
 		0865DBC01F5FFA38009957B9 /* EGGPLANt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGGPLANt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865DBC31F5FFA38009957B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				0865DBC31F5FFA38009957B9 /* AppDelegate.swift */,
 				0865DBCC1F5FFA38009957B9 /* LaunchScreen.storyboard */,
 				0865DBC71F5FFA38009957B9 /* Main.storyboard */,
+				086059FC1F65C9120003B4EE /* MyPetVC.swift */,
 				08D5A70A1F6534BF00ABC4CE /* RoundCornerTf.swift */,
 				081264791F651FE10002AD56 /* ChecklistVC.swift */,
 				086113A01F649C5200D7568E /* CreateEventVC.swift */,
@@ -519,6 +522,7 @@
 				0865DBF81F6021E6009957B9 /* LoadingVC.swift in Sources */,
 				0865DBC41F5FFA38009957B9 /* AppDelegate.swift in Sources */,
 				B0F641C21F65837D00693EDA /* FilterVC.swift in Sources */,
+				086059FD1F65C9120003B4EE /* MyPetVC.swift in Sources */,
 				B07905DA1F625B93003A97AD /* TimeTVC.swift in Sources */,
 				086113A11F649C5200D7568E /* CreateEventVC.swift in Sources */,
 				08D5A70B1F6534BF00ABC4CE /* RoundCornerTf.swift in Sources */,

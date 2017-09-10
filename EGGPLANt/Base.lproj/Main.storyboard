@@ -614,7 +614,7 @@ you got an egg!</string>
             </objects>
             <point key="canvasLocation" x="4255" y="132"/>
         </scene>
-        <!--ChecklistVC-->
+        <!--Checklist-->
         <scene sceneID="N0p-1I-WiG">
             <objects>
                 <viewController id="mtE-QD-dAQ" customClass="ChecklistVC" customModule="EGGPLANt" customModuleProvider="target" sceneMemberID="viewController">
@@ -714,6 +714,29 @@ you got an egg!</string>
                                             <outlet property="typeImage" destination="MH9-BB-Zxf" id="em4-5C-7GJ"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="loadmoreCell" id="Fbo-pc-hkt" customClass="LoadmoreCell" customModule="EGGPLANt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="149" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fbo-pc-hkt" id="0zh-xD-prG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBI-OL-8jK">
+                                                    <rect key="frame" x="126" y="8" width="123" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="查看已完成事項">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="loadCompletedTasks:" destination="Fbo-pc-hkt" eventType="touchUpInside" id="g9x-IB-KrC"/>
+                                                        <action selector="loadCompletedTasks:" destination="ZHw-wa-cyk" eventType="touchUpInside" id="peq-bo-f5V"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="mtE-QD-dAQ" id="kjl-c4-lRf"/>
@@ -724,7 +747,7 @@ you got an egg!</string>
                                 <rect key="frame" x="68" y="170" width="242" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gainexp" translatesAutoresizingMaskIntoConstraints="NO" id="7uB-de-xOW">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gainexp" translatesAutoresizingMaskIntoConstraints="NO" id="7uB-de-xOW">
                                         <rect key="frame" x="0.0" y="31" width="242" height="242"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -742,31 +765,113 @@ you got an egg!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="WvZ-ar-pfd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RLs-J5-u5Q"/>
+                    <navigationItem key="navigationItem" title="Checklist" id="RLs-J5-u5Q" userLabel="Check list"/>
                     <connections>
                         <outlet property="subview" destination="tcf-bX-pGd" id="8ec-NE-F0K"/>
                         <outlet property="tableView" destination="7K2-D8-Edm" id="FzG-Qh-9q5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fw-Ep-xo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZHw-wa-cyk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4356" y="-644.52773613193403"/>
         </scene>
         <!--My Pet-->
         <scene sceneID="tTc-Te-aqL">
             <objects>
-                <viewController id="38B-wr-tBt" sceneMemberID="viewController">
+                <viewController id="38B-wr-tBt" customClass="MyPetVC" customModule="EGGPLANt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rZx-D8-J6Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eggdemo1" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-lr-WSe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9a-fe-fuW">
+                                <rect key="frame" x="21" y="85" width="334" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="demobasket" translatesAutoresizingMaskIntoConstraints="NO" id="SqE-qn-SUH">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="482"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGI-mx-uFq">
+                                        <rect key="frame" x="21" y="135" width="92" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" " image="basketLv1"/>
+                                        <connections>
+                                            <action selector="openChickPopup:" destination="38B-wr-tBt" eventType="touchUpInside" id="ZiE-6u-Qg3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-C6-9gf">
+                                        <rect key="frame" x="121" y="135" width="102" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="  " image="basketLv2"/>
+                                        <connections>
+                                            <action selector="openChickPopup:" destination="38B-wr-tBt" eventType="touchUpInside" id="zBh-8P-fgX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp3-2M-4pl">
+                                        <rect key="frame" x="220" y="135" width="97" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" " image="basketLv3"/>
+                                        <connections>
+                                            <action selector="openChickPopup:" destination="38B-wr-tBt" eventType="touchUpInside" id="dZ8-Ke-C4O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-i8-WGI" userLabel=" ">
+                                        <rect key="frame" x="284" y="16" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" " backgroundImage="cancel"/>
+                                        <connections>
+                                            <action selector="closeBasket:" destination="38B-wr-tBt" eventType="touchUpInside" id="btZ-LB-jSF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-BX-YTP">
+                                <rect key="frame" x="34" y="89" width="307" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chickLv1" translatesAutoresizingMaskIntoConstraints="NO" id="TfB-rb-6C2">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="489"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBv-i6-hUK" userLabel=" ">
+                                        <rect key="frame" x="253" y="62" width="35" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" " image="canceldark"/>
+                                        <connections>
+                                            <action selector="closeBasket:" destination="38B-wr-tBt" eventType="touchUpInside" id="Ep0-of-woM"/>
+                                            <action selector="closeChickPopup:" destination="38B-wr-tBt" eventType="touchUpInside" id="DJp-FX-QnG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9lp-gf-F8L"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Pet" id="j25-Pz-8RF"/>
+                    <navigationItem key="navigationItem" title="My Pet" id="j25-Pz-8RF">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="basket" id="wP8-Ey-uyq">
+                            <connections>
+                                <action selector="openBasket:" destination="38B-wr-tBt" id="24h-JL-om8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="basketPopup" destination="B9a-fe-fuW" id="AVj-b4-FzZ"/>
+                        <outlet property="chickIV" destination="TfB-rb-6C2" id="n5e-4R-VWI"/>
+                        <outlet property="chickPopup" destination="hlA-BX-YTP" id="Qw8-Gh-M2m"/>
+                        <outlet property="demoIV" destination="3tL-lr-WSe" id="JpX-tP-0YZ"/>
+                        <outlet property="rightBarBtn" destination="wP8-Ey-uyq" id="g1b-FV-dLD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMT-S8-ctd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4014" y="920"/>
+            <point key="canvasLocation" x="4509.6000000000004" y="896.40179910044981"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="OHk-58-qpO">
@@ -782,7 +887,7 @@ you got an egg!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDa-sa-b8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4014" y="1685"/>
+            <point key="canvasLocation" x="4209" y="1684"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f41-B2-32f">
@@ -814,6 +919,7 @@ you got an egg!</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBar" destination="t0Q-Zs-TCp" id="QFC-Mo-1I0"/>
                         <segue destination="o2v-6M-YwX" kind="relationship" relationship="viewControllers" id="xA2-kT-CPj"/>
                         <segue destination="vri-V2-E1q" kind="relationship" relationship="viewControllers" id="MjA-k6-OQR"/>
                         <segue destination="9oO-uf-xKH" kind="relationship" relationship="viewControllers" id="EfV-B6-rUy"/>
@@ -823,7 +929,7 @@ you got an egg!</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrS-3n-gaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2874" y="132"/>
+            <point key="canvasLocation" x="2698" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s44-rG-YLw">
@@ -881,7 +987,7 @@ you got an egg!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPY-Ko-hXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3561" y="920"/>
+            <point key="canvasLocation" x="3854" y="898"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P4o-8Z-nBq">
@@ -929,8 +1035,17 @@ you got an egg!</string>
         <image name="Schedule_pe" width="60" height="99"/>
         <image name="Schedule_slice" width="62" height="31"/>
         <image name="Schedule_ui" width="60" height="112"/>
+        <image name="basket" width="26" height="24"/>
+        <image name="basketLv1" width="92" height="119"/>
+        <image name="basketLv2" width="92" height="119"/>
+        <image name="basketLv3" width="92" height="119"/>
         <image name="box" width="34" height="34"/>
         <image name="boxwtick" width="34" height="34"/>
+        <image name="cancel" width="30" height="30"/>
+        <image name="canceldark" width="30" height="30"/>
+        <image name="chickLv1" width="307" height="489"/>
+        <image name="demobasket" width="334" height="482"/>
+        <image name="eggdemo1" width="375" height="543"/>
         <image name="gainexp" width="242" height="242"/>
         <image name="okBtn" width="51" height="25"/>
         <image name="squareColoredbell" width="91" height="95"/>
@@ -938,6 +1053,6 @@ you got an egg!</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dni-9P-LMB"/>
-        <segue reference="6fd-vu-M3h"/>
+        <segue reference="LHC-Og-LEY"/>
     </inferredMetricsTieBreakers>
 </document>

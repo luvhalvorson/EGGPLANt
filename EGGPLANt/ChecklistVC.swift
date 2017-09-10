@@ -40,6 +40,13 @@ class ChecklistTVCell: UITableViewCell {
     }
 }
 
+class LoadmoreCell: UITableViewCell {
+    @IBAction func loadCompletedTasks(_ sender: UIButton) {
+    }
+    
+}
+
+
 class ChecklistVC: UIViewController, ChecklistDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -50,6 +57,7 @@ class ChecklistVC: UIViewController, ChecklistDelegate, UITableViewDataSource, U
     }
     
     var checklistItems:[ChecklistItem] = []
+    var doneItems:[ChecklistItem] = []
     
     func btnChecked(cell: ChecklistTVCell) {
         // Pop up gain experience window
@@ -57,6 +65,7 @@ class ChecklistVC: UIViewController, ChecklistDelegate, UITableViewDataSource, U
         let when = DispatchTime.now() + 0.5 // change 2 to desired number of seconds
         DispatchQueue.main.asyncAfter(deadline: when) {
             let indexPath = self.tableView.indexPath(for: cell)
+            self.doneItems.append(self.checklistItems[indexPath!.row])
             self.checklistItems.remove(at: indexPath!.row)
             print("remove")
             // Put inside this block to reload after removing items
@@ -106,64 +115,71 @@ class ChecklistVC: UIViewController, ChecklistDelegate, UITableViewDataSource, U
     }
     
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return checklistItems.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return checklistItems.count + 1
     }
     
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell:ChecklistTVCell? = tableView.dequeueReusableCell(withIdentifier: "Cell") as?ChecklistTVCell
-        cell?.delegate = self
-        
-        // Make sure the reused cell has been all unselected
-        cell?.checkbox.isSelected = false
-        
-        cell?.titleLb?.text = checklistItems[indexPath.row].title
-        cell?.locationLb?.text = "@ \(checklistItems[indexPath.row].location)"
-        cell?.annotationLb?.text = "備註：\(checklistItems[indexPath.row].annotation)"
-        cell?.dateLb?.text = checklistItems[indexPath.row].date
-        cell?.timeLb?.text = checklistItems[indexPath.row].time
-        
-        cell?.typeImage?.frame.origin.x = CGFloat(117 + 20 * (checklistItems[indexPath.row].title.count) + 7)
-        
-        // Choose the color of dot based on event type
-        let type = checklistItems[indexPath.row].type
-        
-        if type == 0 {
-            cell?.typeImage?.image = UIImage(named: "yellowspot")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Load more cell at the last row
+        if indexPath.row == checklistItems.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadmoreCell") as! LoadmoreCell
+            return cell
         }
-        else if type == 1 {
-            cell?.typeImage?.image = UIImage(named: "pinkspot")
-            
-        }
-        // See if the event has notification
-        let bell = checklistItems[indexPath.row].bell
-        
-        if bell {
-            cell?.dateImage?.image = UIImage(named: "squareColoredbell")
-        }
+        // Checklist cells
         else {
-            cell?.dateImage?.image = UIImage(named: "2SquareUncoloredbell")
+            let cell:ChecklistTVCell? = tableView.dequeueReusableCell(withIdentifier: "Cell") as?ChecklistTVCell
+            cell?.delegate = self
+            
+            // Make sure the reused cell has been all unselected
+            cell?.checkbox.isSelected = false
+            
+            cell?.titleLb?.text = checklistItems[indexPath.row].title
+            cell?.locationLb?.text = "@ \(checklistItems[indexPath.row].location)"
+            cell?.annotationLb?.text = "備註：\(checklistItems[indexPath.row].annotation)"
+            cell?.dateLb?.text = checklistItems[indexPath.row].date
+            cell?.timeLb?.text = checklistItems[indexPath.row].time
+            
+            cell?.typeImage?.frame.origin.x = CGFloat(117 + 20 * (checklistItems[indexPath.row].title.count) + 7)
+            
+            // Choose the color of dot based on event type
+            let type = checklistItems[indexPath.row].type
+            
+            if type == 0 {
+                cell?.typeImage?.image = UIImage(named: "yellowspot")
+            }
+            else if type == 1 {
+                cell?.typeImage?.image = UIImage(named: "pinkspot")
+                
+            }
+            // See if the event has notification
+            let bell = checklistItems[indexPath.row].bell
+            
+            if bell {
+                cell?.dateImage?.image = UIImage(named: "squareColoredbell")
+            }
+            else {
+                cell?.dateImage?.image = UIImage(named: "2SquareUncoloredbell")
+            }
+            
+            // See if the event is done
+            let done = checklistItems[indexPath.row].done
+            
+            if done {
+                cell?.boxImage?.image = UIImage(named: "boxwtick")
+            }
+            else if !done {
+                cell?.boxImage?.image = UIImage(named: "box")
+            }
+            else{
+                print("what?!")
+            }
+            
+            return cell!
         }
-        
-        // See if the event is done
-        let done = checklistItems[indexPath.row].done
-        
-        if done {
-            cell?.boxImage?.image = UIImage(named: "boxwtick")
-        }
-        else if !done {
-            cell?.boxImage?.image = UIImage(named: "box")
-        }
-        else{
-            print("what?!")
-        }
-        
-        return cell!
     }
     
-     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return 120
     }

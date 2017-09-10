@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02F30AE133DBD5F16BC7799FF7BD598D /* Pods_EGGPLANt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EGGPLANt.framework; path = "Pods-EGGPLANt.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F30AE133DBD5F16BC7799FF7BD598D /* Pods_EGGPLANt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4A6627414F5F913B0C855C0EECB7E0 /* Pods-EGGPLANtTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EGGPLANtTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0AFF5EB4B104C05A904B2C927624E4A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B256E335AC7C7651E860FD392653956 /* Pods-EGGPLANtTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGGPLANtTests-frameworks.sh"; sourceTree = "<group>"; };
@@ -31,21 +31,21 @@
 		55240931259DAF4B9562C8D7A1A6E2BC /* Pods-EGGPLANt-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGGPLANt-resources.sh"; sourceTree = "<group>"; };
 		60B54892661B413E994CC01BB8421FA0 /* Pods-EGGPLANtTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EGGPLANtTests-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DCBFC770576D68C6FF9874DE46094E9 /* Pods_EGGPLANtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EGGPLANtTests.framework; path = "Pods-EGGPLANtTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		816722190D4423D4FDED220FC70532C9 /* Pods-EGGPLANtUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EGGPLANtUITests.modulemap"; sourceTree = "<group>"; };
+		6DCBFC770576D68C6FF9874DE46094E9 /* Pods_EGGPLANtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		816722190D4423D4FDED220FC70532C9 /* Pods-EGGPLANtUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGGPLANtUITests.modulemap"; sourceTree = "<group>"; };
 		8F1E4314FEF0867F47CB418B03D4E562 /* Pods-EGGPLANt-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EGGPLANt-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C18504108F8E2293B41A7EC4662A5E /* Pods-EGGPLANt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EGGPLANt-dummy.m"; sourceTree = "<group>"; };
 		96A405086E8FEF85EF5FF08F34F33DF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A010A6ADB923B7E9BF60329C327BF4DF /* Pods-EGGPLANtTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EGGPLANtTests.modulemap"; sourceTree = "<group>"; };
+		A010A6ADB923B7E9BF60329C327BF4DF /* Pods-EGGPLANtTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGGPLANtTests.modulemap"; sourceTree = "<group>"; };
 		A84D055B178EFCAF654FC4823A65BC1A /* Pods-EGGPLANt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EGGPLANt-umbrella.h"; sourceTree = "<group>"; };
 		AB1C61E14E467A6BC47EB9AEB878114B /* Pods-EGGPLANtUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGGPLANtUITests-resources.sh"; sourceTree = "<group>"; };
 		B05C09AA12147CA05EEEB3064D3238A6 /* Pods-EGGPLANtUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EGGPLANtUITests-dummy.m"; sourceTree = "<group>"; };
-		C04617A8DD02497255108FDD71B8B78C /* Pods_EGGPLANtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EGGPLANtUITests.framework; path = "Pods-EGGPLANtUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04617A8DD02497255108FDD71B8B78C /* Pods_EGGPLANtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGGPLANtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B70883156CFEB0D5B6A1ADCCF868A0 /* Pods-EGGPLANtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGGPLANtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9BBF8C338F0C7B90EFB90A9C01E5CB3 /* Pods-EGGPLANtUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EGGPLANtUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D45E33B3F18516E0EBF3BB6062F2043F /* Pods-EGGPLANtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGGPLANtTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC09CBA8678D9C44050354EAA7238BAB /* Pods-EGGPLANt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EGGPLANt.modulemap"; sourceTree = "<group>"; };
+		DC09CBA8678D9C44050354EAA7238BAB /* Pods-EGGPLANt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EGGPLANt.modulemap"; sourceTree = "<group>"; };
 		E40C80159F3669CE1C7E1548E0520996 /* Pods-EGGPLANt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGGPLANt.release.xcconfig"; sourceTree = "<group>"; };
 		E824DA3EA58299A8BC2751F4B94DA2A3 /* Pods-EGGPLANtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EGGPLANtTests.release.xcconfig"; sourceTree = "<group>"; };
 		E827F3E40EAC34D7161FC7E90DD11F52 /* Pods-EGGPLANt-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EGGPLANt-frameworks.sh"; sourceTree = "<group>"; };
@@ -280,6 +280,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 94B3019A11DC09E524BB0DD30452D5BE /* Products */;

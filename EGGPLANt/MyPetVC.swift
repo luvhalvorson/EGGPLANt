@@ -24,15 +24,16 @@ class MyPetVC: UIViewController {
         basketPopup.isHidden = true
     }
     @IBAction func openChickPopup(_ sender: UIButton) {
+        demoIV.isHidden = true
         switch sender.tag {
         case 0:
-            chickIV.image = UIImage(named: "chickLv1")
+            chickIV.image = UIImage(named: "lv1ChickenLv4")
             break
         case 1:
-        chickIV.image = UIImage(named: "basket")
+        chickIV.image = UIImage(named: "lv2Eggplant")
             break
         case 2:
-        chickIV.image = UIImage(named: "chicklv1")
+        chickIV.image = UIImage(named: "lv3Bear")
             break
         default:
             chickIV.image = UIImage(named: "chicklv1")
@@ -43,6 +44,7 @@ class MyPetVC: UIViewController {
     }
     
     @IBAction func closeChickPopup(_ sender: UIButton) {
+        demoIV.isHidden = false
         basketPopup.isHidden = false
         chickPopup.isHidden = true
     }
@@ -53,8 +55,9 @@ class MyPetVC: UIViewController {
         rightBarBtn.image = UIImage(named:"basket")?.withRenderingMode(.alwaysOriginal)
         
         
-            demoIV.animationImages = [UIImage(named: "eggdemo1")!, UIImage(named: "eggdemo2")!]
-            demoIV.animationDuration = 0.7
+            demoIV.animationImages = [UIImage(named: "eggdemo1")!, UIImage(named: "eggdemo2")!
+        , UIImage(named: "eggLv1500")!, UIImage(named: "eggLv1700")!, UIImage(named: "eggLv1800")!, UIImage(named: "eggLv1900")!, UIImage(named: "slice")!]
+            demoIV.animationDuration = 1
             demoIV.startAnimating()
         
     }

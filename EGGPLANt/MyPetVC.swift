@@ -57,7 +57,7 @@ class MyPetVC: UIViewController {
         
             demoIV.animationImages = [UIImage(named: "eggdemo1")!, UIImage(named: "eggdemo2")!
         , UIImage(named: "eggLv1500")!, UIImage(named: "eggLv1700")!, UIImage(named: "eggLv1800")!, UIImage(named: "eggLv1900")!, UIImage(named: "slice")!]
-            demoIV.animationDuration = 1
+            demoIV.animationDuration = 2
             demoIV.startAnimating()
         
     }

@@ -16,6 +16,7 @@ class CreateEventVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     var repeatString = ["Never", "Every day","Every week","Every month","Every year"]
     
+    @IBOutlet weak var alertTF: RoundCornerTf!
     @IBOutlet weak var alertPV: UIPickerView!
     @IBOutlet weak var repeatPV: UIPickerView!
     
@@ -69,6 +70,12 @@ class CreateEventVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         return pickerLabel
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        self.alertTF.text = self.alertString[row]
+        self.alertPV.isHidden = true
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,8 +11,6 @@ import UIKit
 class RoundCornerTf: UITextField {
 
     override func draw(_ rect: CGRect) {
-        print("haha")
-        
         self.clipsToBounds = true
         self.layer.cornerRadius = 12.0
         self.layer.borderWidth = 2.0
